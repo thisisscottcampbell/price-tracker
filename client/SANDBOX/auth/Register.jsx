@@ -1,6 +1,6 @@
 import React from 'react';
 import inputHook from '../hooks/inputHook';
-import NavBar from '../nav/NavBar'
+import RegNavBar from '../nav/RegNavBar';
 
 const Register = ({ setUser, postUser }) => {
 
@@ -21,7 +21,9 @@ const Register = ({ setUser, postUser }) => {
 
   return (
     <div>
-      <NavBar />
+      <nav>
+        <RegNavBar />
+      </nav>
       <form onSubmit={formSubmit}>
         <h1>Register</h1>
         <input

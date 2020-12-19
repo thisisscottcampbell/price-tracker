@@ -1,8 +1,8 @@
 import React from 'react';
 import inputHook from '../hooks/inputHook';
-import NavBar from '../nav/NavBar'
+import LogInNavBar from '../nav/LogInNavBar';
 
-const Register = ({ setUser, getUser }) => {
+const Login = ({ setUser, getUser }) => {
 
   //GET THE USER INPUT SO WE CAN ISSUE A "GET" TO DB W/ getUser, AND THEN UPDATE APP STATE W/ setUser
 
@@ -21,7 +21,9 @@ const Register = ({ setUser, getUser }) => {
 
   return (
     <div>
-      <NavBar />
+      <nav>
+        <LogInNavBar />
+      </nav>
       <form onSubmit={formSubmit}>
         <h1>Login</h1>
         <input
@@ -40,4 +42,4 @@ const Register = ({ setUser, getUser }) => {
   );
 };
 
-export default Register;
+export default Login;
